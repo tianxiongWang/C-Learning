@@ -3,7 +3,7 @@ using namespace std;
 void swap(int &, int &);
 int main()
 {
-    int a = 5, b = 10;
+    char a[]="wangxiong"
     cout << "before_change:"
          << "a=" << a << "   b=" << b << endl;
     swap(a, b);
