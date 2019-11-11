@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
+
+template <typename T>
+T abc(T a, T b)
+{
+    return a + b;
+}
 int main()
 {
-    template <class T>
-    T abc(T a, T b)
-    {
-        return a + b;
-    }
-    cout << abc(1, 2.0) << endl;
+    cout << abc(1.0, 2.0) << endl;
     return 0;
 }
