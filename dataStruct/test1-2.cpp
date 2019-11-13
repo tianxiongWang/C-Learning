@@ -2,14 +2,15 @@
 #include <iostream>
 using namespace std;
 template <typename T>
-int count(T (&a)[10], T b)
+int count(T a[10], T b)
 {
-    int c;
-    for (auto it = a.begin(); it != a.end(); it++)
+    int c = 0;
+    for (int i = 0; i < 10; ++i)
     {
-        if (*it == b)
+        if (a[i] == b)
             ++c;
     }
+    cout << c << endl;
     return c;
 }
 int main()
